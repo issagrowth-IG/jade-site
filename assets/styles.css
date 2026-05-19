@@ -4,30 +4,32 @@
    ============================================ */
 
 :root {
-  /* Canvas — luxury off-whites with depth */
-  --bg: #F4F0E6;
+  /* Canvas — Loro Piana / Aesop tier minimal */
+  --bg: #F5F1E8;
   --bg-card: #FFFFFF;
-  --bg-deep: #E9E3D2;
-  --bg-tinted: #E0D7C0;
-  --bg-noir: #0B0E0C;
-  --line: rgba(11, 14, 12, 0.08);
-  --line-strong: rgba(11, 14, 12, 0.20);
+  --bg-deep: #EAE3D2;
+  --bg-tinted: #DFD6C0;
+  --bg-paper: #FDFAF1;
+  --bg-noir: #0A0C0A;
+  --line: rgba(10, 12, 10, 0.10);
+  --line-strong: rgba(10, 12, 10, 0.24);
+  --line-hair: rgba(10, 12, 10, 0.06);
 
-  /* Text — deeper for premium contrast */
-  --text: #0B0E0C;
-  --text-soft: #353B36;
-  --text-mute: #7A7F79;
+  /* Text — high contrast editorial */
+  --text: #0A0C0A;
+  --text-soft: #2E342E;
+  --text-mute: #6F756F;
 
-  /* Brand — Hermès-tier neutrals */
-  --forest: #0E3024;
-  --forest-deep: #061A11;
-  --forest-darker: #02100A;
-  --moss: #354F44;
-  --gold: #A6824A;
-  --gold-deep: #846433;
-  --gold-soft-tone: #C9AC76;
-  --terracotta: #A86B4F;
-  --ivory: #E8DCBF;
+  /* Brand — restrained luxury */
+  --forest: #0D2920;
+  --forest-deep: #04150E;
+  --forest-darker: #010A06;
+  --moss: #2E4940;
+  --gold: #997A45;
+  --gold-deep: #7A5E2E;
+  --gold-soft-tone: #C7A972;
+  --terracotta: #A06A50;
+  --ivory: #ECDFBE;
 
   /* Radii */
   --r-pill: 999px;
@@ -51,34 +53,53 @@ html, body { margin: 0; padding: 0; }
 html { scroll-behavior: auto; } /* let Lenis handle it */
 
 body {
-  font-family: 'Inter', 'Inter Tight', system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.55;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   cursor: none;
 }
 @media (hover: none) { body { cursor: auto; } }
 
-/* === Typography === */
+/* === Typography — Fraunces editorial === */
 h1, h2, h3, h4 {
-  font-family: 'Instrument Serif', 'Inter Tight', serif;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 1.02;
+  font-family: 'Fraunces', 'Fraunces', serif;
+  font-weight: 350;
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+  letter-spacing: -0.035em;
+  line-height: 0.96;
   margin: 0;
   color: var(--text);
 }
-h1 { font-size: clamp(2.75rem, 7vw, 6.5rem); letter-spacing: -0.035em; line-height: 0.98; }
-h2 { font-size: clamp(2rem, 4.5vw, 4.25rem); letter-spacing: -0.03em; line-height: 1.02; }
-h3 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); letter-spacing: -0.025em; }
+h1 {
+  font-size: clamp(3rem, 9vw, 9rem);
+  letter-spacing: -0.05em;
+  line-height: 0.92;
+  font-weight: 300;
+}
+h2 {
+  font-size: clamp(2.25rem, 5.5vw, 5.5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  font-weight: 320;
+}
+h3 {
+  font-size: clamp(1.5rem, 2.4vw, 2.4rem);
+  letter-spacing: -0.03em;
+  font-weight: 350;
+}
+em {
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+}
 
-.font-display { font-family: 'Instrument Serif', serif; font-weight: 400; }
-.font-sans { font-family: 'Inter Tight', 'Inter', sans-serif; }
+.font-display { font-family: 'Fraunces', serif; font-weight: 300; }
+.font-sans { font-family: 'Inter', sans-serif; }
 
 p { color: var(--text-soft); }
 
@@ -143,7 +164,7 @@ p { color: var(--text-soft); }
   display: inline-flex;
   align-items: baseline;
   gap: 12px;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-style: italic;
   font-weight: 400;
   font-size: 30px;
@@ -375,7 +396,7 @@ p { color: var(--text-soft); }
 
 /* === Big intro statement === */
 .statement {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-size: clamp(1.75rem, 3vw, 3rem);
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -395,7 +416,7 @@ p { color: var(--text-soft); }
 .pillar-num {
   display: inline-flex;
   align-items: center;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-size: 1.1rem;
   font-style: italic;
   color: var(--text-mute);
@@ -471,7 +492,7 @@ p { color: var(--text-soft); }
   border-top: 1px solid var(--line);
 }
 .card-price {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-size: 1.5rem;
   color: var(--text);
 }
@@ -556,7 +577,7 @@ p { color: var(--text-soft); }
 }
 @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; } }
 .footer-display {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   letter-spacing: -0.025em;
   line-height: 1;
@@ -620,7 +641,7 @@ p { color: var(--text-soft); }
   display: flex;
   overflow: hidden;
   white-space: nowrap;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Fraunces', serif;
   font-style: italic;
   font-size: clamp(3rem, 8vw, 7rem);
   color: var(--text);
