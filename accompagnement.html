@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accompagnement — La Bonne Méthode</title>
+  <meta name="description" content="L'accompagnement individuel avec une coach certifiée La Bonne Méthode." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;450;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-mark">Jade</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link" href="retraite.html">Retraite</a></li>
+        <li><a class="nav-link" href="la-bonne-methode.html">La Bonne Méthode</a></li>
+        <li><a class="nav-link is-active" href="accompagnement.html">Accompagnement</a></li>
+        <li><a class="nav-cta" href="contact.html" data-magnetic>Réserver un appel</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span class="sep">›</span>
+    <span class="current">Accompagnement</span>
+  </nav>
+
+  <!-- HERO -->
+  <section style="padding: 60px 0 80px;">
+    <div class="container-wide" style="max-width: 1200px;">
+      <p class="eyebrow reveal">Sur-mesure</p>
+      <h1 class="reveal" style="margin-top: 24px; max-width: 880px;">
+        Un chemin<br/><em style="font-style: italic; color: var(--gold);">à votre rythme.</em>
+      </h1>
+      <p class="reveal" style="margin-top: 32px; max-width: 620px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+        Pour celles qui veulent avancer en privé, hors cohorte. Un suivi individuel avec une coach certifiée par Jade, sur trois ou six mois, calibré à votre situation.
+      </p>
+    </div>
+  </section>
+
+  <!-- IMAGE BAND -->
+  <div class="image-band reveal">
+    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=2400&q=80" alt="Verdure et lumière douce" />
+  </div>
+
+  <!-- TWO FORMULAS -->
+  <section class="section-pad">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 80px;">
+        <p class="eyebrow reveal">Deux formats</p>
+        <h2 class="reveal" style="margin-top: 20px;">Choisissez la profondeur<br/><em style="font-style: italic; color: var(--gold);">qui vous va.</em></h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+
+        <article class="card reveal">
+          <div class="card-body" style="padding: 56px 48px;">
+            <p class="card-place">Format court</p>
+            <h3 class="card-title">Le déclic</h3>
+            <p class="card-desc" style="margin-bottom: 20px;">Trois mois pour traverser un cap précis. Idéal après une rupture, un changement de vie, ou un blocage identifié. Suivi rapproché, objectifs clairs.</p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> 6 sessions individuelles de 60 min</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Accès messagerie privée 5j/7</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Plan de travail personnalisé</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Coach certifiée par Jade</li>
+            </ul>
+            <div class="card-actions">
+              <span class="card-price">1 480 €<small>Paiement en 3 fois</small></span>
+              <a href="contact.html" class="arrow-link">Candidater →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="border: 1px solid var(--gold);">
+          <div class="card-body" style="padding: 56px 48px;">
+            <p class="card-place" style="color: var(--forest-deep);">Format long · le plus complet</p>
+            <h3 class="card-title">L'ancrage</h3>
+            <p class="card-desc" style="margin-bottom: 20px;">Six mois pour installer durablement les changements. Idéal si vous voulez aller au-delà du symptôme et reconstruire en profondeur, avec un cadre solide.</p>
+            <ul style="list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> 12 sessions individuelles de 60 min</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Accès messagerie privée 6j/7</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Bilan tripartite avec Jade</li>
+              <li style="display: flex; gap: 14px; align-items: flex-start; font-size: 15px; color: var(--text-muted);"><span style="color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1; margin-top: -2px;">›</span> Invitation à une soirée La Bonne Méthode</li>
+            </ul>
+            <div class="card-actions">
+              <span class="card-price">2 680 €<small>Paiement en 3 ou 6 fois</small></span>
+              <a href="contact.html" class="arrow-link">Candidater →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section-pad" style="background: var(--bg-cream-light);">
+    <div class="container-wide" style="max-width: 1000px;">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 80px;">
+        <p class="eyebrow reveal">Comment ça se passe</p>
+        <h2 class="reveal" style="margin-top: 20px;">Quatre étapes,<br/><em style="font-style: italic; color: var(--gold);">aucune surprise.</em></h2>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div class="reveal" style="display: grid; grid-template-columns: 80px 1fr; gap: 40px; padding: 32px 0; border-bottom: 1px solid var(--sage-light); align-items: flex-start;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--gold); font-style: italic;">01</span>
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">L'échange initial</h3>
+            <p style="color: var(--text-muted); font-size: 15.5px; line-height: 1.7; margin: 0;">Vingt minutes au téléphone pour faire le point. Ce que vous traversez, ce que vous cherchez, si l'accompagnement est juste pour vous maintenant.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="display: grid; grid-template-columns: 80px 1fr; gap: 40px; padding: 32px 0; border-bottom: 1px solid var(--sage-light); align-items: flex-start;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--gold); font-style: italic;">02</span>
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Le matching avec une coach</h3>
+            <p style="color: var(--text-muted); font-size: 15.5px; line-height: 1.7; margin: 0;">Vous êtes orientée vers une coach certifiée dont l'approche correspond à votre situation. Toutes nos coachs ont été formées et validées par Jade.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="display: grid; grid-template-columns: 80px 1fr; gap: 40px; padding: 32px 0; border-bottom: 1px solid var(--sage-light); align-items: flex-start;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--gold); font-style: italic;">03</span>
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Le travail régulier</h3>
+            <p style="color: var(--text-muted); font-size: 15.5px; line-height: 1.7; margin: 0;">Sessions individuelles toutes les deux semaines, plan de travail entre les sessions, messagerie privée pour rester en lien. Vous savez exactement ce qui vous attend.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="display: grid; grid-template-columns: 80px 1fr; gap: 40px; padding: 32px 0; align-items: flex-start;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--gold); font-style: italic;">04</span>
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Le point d'arrivée</h3>
+            <p style="color: var(--text-muted); font-size: 15.5px; line-height: 1.7; margin: 0;">Bilan final, document de synthèse personnel, et options de continuité si vous le souhaitez : cohorte, retraite, ou simple suivi de maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM PLACEHOLDER (no faces of Jade) -->
+  <section class="section-pad">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 80px;">
+        <p class="eyebrow reveal">L'équipe</p>
+        <h2 class="reveal" style="margin-top: 20px;">Des coachs<br/><em style="font-style: italic; color: var(--gold);">formées, validées, présentes.</em></h2>
+        <p class="reveal" style="margin-top: 24px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+          Toutes les coachs de l'équipe ont suivi le cursus de certification de Jade. Continuité de méthode, exigence partagée, accompagnement homogène.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 40px;">
+        <div class="reveal" style="text-align: center;">
+          <div style="aspect-ratio: 1; background: var(--bg-cream-deep); border-radius: 50%; max-width: 220px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-style: italic; color: var(--gold);">C</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">Coach 1</h3>
+          <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); margin: 0;">Spécialité · Lien amoureux</p>
+        </div>
+        <div class="reveal" style="text-align: center;">
+          <div style="aspect-ratio: 1; background: var(--bg-cream-deep); border-radius: 50%; max-width: 220px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-style: italic; color: var(--gold);">C</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">Coach 2</h3>
+          <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); margin: 0;">Spécialité · Reconstruction</p>
+        </div>
+        <div class="reveal" style="text-align: center;">
+          <div style="aspect-ratio: 1; background: var(--bg-cream-deep); border-radius: 50%; max-width: 220px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-style: italic; color: var(--gold);">C</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">Coach 3</h3>
+          <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); margin: 0;">Spécialité · Dépendance affective</p>
+        </div>
+        <div class="reveal" style="text-align: center;">
+          <div style="aspect-ratio: 1; background: var(--bg-cream-deep); border-radius: 50%; max-width: 220px; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-style: italic; color: var(--gold);">C</div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 6px;">Coach 4</h3>
+          <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); margin: 0;">Spécialité · Maternité &amp; soi</p>
+        </div>
+      </div>
+      <p class="reveal" style="text-align: center; margin-top: 40px; font-family: 'Jost'; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage);">Photos &amp; bios des coachs à venir</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad" style="background: var(--forest-deep); color: var(--bg-cream); text-align: center;">
+    <div class="container-narrow">
+      <p class="eyebrow reveal" style="color: var(--gold-soft);">Commencer</p>
+      <h2 class="reveal" style="color: var(--bg-cream); margin-top: 20px;">L'échange de départ<br/><em style="font-style: italic; color: var(--gold);">est offert.</em></h2>
+      <p class="reveal" style="margin-top: 28px; max-width: 540px; margin-left: auto; margin-right: auto; color: rgba(245, 240, 232, 0.82); font-size: 17px; line-height: 1.7;">
+        Aucun engagement. Vingt minutes pour voir si l'accompagnement vous convient — et surtout, si c'est le bon moment.
+      </p>
+      <div class="reveal" style="margin-top: 44px;">
+        <a href="contact.html" class="btn" style="background: var(--gold); color: var(--forest-deep);">Réserver mon échange</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-top">
+        <div>
+          <p class="footer-display">La Bonne<br/><em>Méthode.</em></p>
+          <p style="color: rgba(240, 235, 224, 0.6); font-size: 14.5px; line-height: 1.6; max-width: 320px;">Un accompagnement profond pour revenir à soi. Cohortes, retraites, événements.</p>
+        </div>
+        <div><h4>Explorer</h4><ul><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="retraite.html">Retraite</a></li><li><a href="evenements.html">Événements</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="contact.html">Nous écrire</a></li><li><a href="contact.html">Réserver un appel</a></li></ul></div>
+        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 La Bonne Méthode</span><span>Mentions légales · CGV · Politique de confidentialité</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

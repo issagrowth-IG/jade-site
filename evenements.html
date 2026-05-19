@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Événements — La Bonne Méthode</title>
+  <meta name="description" content="Les soirées La Bonne Méthode, conférences et lives à venir." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;450;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-mark">Jade</a>
+      <ul class="nav-links">
+        <li><a class="nav-link is-active" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link" href="retraite.html">Retraite</a></li>
+        <li><a class="nav-link" href="la-bonne-methode.html">La Bonne Méthode</a></li>
+        <li><a class="nav-link" href="accompagnement.html">Accompagnement</a></li>
+        <li><a class="nav-cta" href="contact.html" data-magnetic>Réserver un appel</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span class="sep">›</span>
+    <span class="current">Événements</span>
+  </nav>
+
+  <!-- HERO -->
+  <section style="padding: 60px 0 80px;">
+    <div class="container-wide" style="max-width: 1200px;">
+      <p class="eyebrow reveal">Calendrier</p>
+      <h1 class="reveal" style="margin-top: 24px; max-width: 880px;">
+        Les rendez-vous<br/><em style="font-style: italic; color: var(--gold);">qui font la communauté.</em>
+      </h1>
+      <p class="reveal" style="margin-top: 32px; max-width: 620px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+        Soirées de clôture, conférences thématiques, lives mensuels. Trois formats pour se retrouver, échanger et continuer le chemin entre deux cohortes.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTERS / CATEGORIES -->
+  <section style="padding-bottom: 40px;">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="display: flex; gap: 32px; flex-wrap: wrap; padding: 24px 0; border-top: 1px solid var(--sage-light); border-bottom: 1px solid var(--sage-light);">
+        <span style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); align-self: center;">Filtrer</span>
+        <a href="#tous" class="nav-link" style="font-size: 14px; letter-spacing: 0.06em;">Tous</a>
+        <a href="#soirees" class="nav-link" style="font-size: 14px; letter-spacing: 0.06em;">Soirées La Bonne Méthode</a>
+        <a href="#conferences" class="nav-link" style="font-size: 14px; letter-spacing: 0.06em;">Conférences</a>
+        <a href="#lives" class="nav-link" style="font-size: 14px; letter-spacing: 0.06em;">Lives</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT CARDS -->
+  <section style="padding-bottom: 120px;">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1200&q=80" alt="Soirée intimiste" />
+            <span class="card-badge is-deep">Soirée privée · Cohorte</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">Paris</p>
+            <h3 class="card-title">Soirée La Bonne Méthode #04</h3>
+            <p class="card-desc">La soirée de clôture de la cohorte de printemps. Les participantes se rencontrent en réel, les coachs aussi. Petits papiers cadeaux, témoignages filmés, et la pose officielle de la sororité.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> 18 octobre 2026</span>
+              <span><strong>Horaire</strong> 19h — 23h</span>
+              <span><strong>Lieu</strong> Le Marais</span>
+              <span><strong>Accès</strong> Sur invitation</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">Réservé<small>Cohorte en cours</small></span>
+              <a href="contact.html" class="arrow-link">En savoir plus →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80" alt="Salle de conférence" />
+            <span class="card-badge is-gold">Conférence · Ouvert au public</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">Bordeaux</p>
+            <h3 class="card-title">Briser le cycle — Soirée conférence</h3>
+            <p class="card-desc">Une heure avec Jade pour comprendre comment se forment les schémas et comment on les défait, vraiment. Public ouvert, places limitées à 80 personnes.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> 22 novembre 2026</span>
+              <span><strong>Horaire</strong> 19h30 — 21h30</span>
+              <span><strong>Lieu</strong> Quai des Marques</span>
+              <span><strong>Places</strong> 80 max</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">35 €<small>Inscription requise</small></span>
+              <a href="contact.html" class="arrow-link">Réserver →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=1200&q=80" alt="Atelier intime" />
+            <span class="card-badge">Live · Gratuit</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">En ligne</p>
+            <h3 class="card-title">Live mensuel — Vos questions</h3>
+            <p class="card-desc">Une heure de live Q&amp;A avec Jade, en direct. On répond aux questions de la communauté, on partage les nouveautés du programme, on prend le pouls de la sororité.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> Premier jeudi du mois</span>
+              <span><strong>Horaire</strong> 20h heure Paris</span>
+              <span><strong>Lieu</strong> Instagram Live</span>
+              <span><strong>Accès</strong> Tout public</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">Gratuit<small>Rendez-vous mensuel</small></span>
+              <a href="#" class="arrow-link">Recevoir le rappel →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80" alt="Espace zen" />
+            <span class="card-badge is-deep">Soirée privée · Cohorte</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">Lyon</p>
+            <h3 class="card-title">Soirée La Bonne Méthode #05</h3>
+            <p class="card-desc">Deuxième édition lyonnaise. Mêmes rituels, même esprit : on célèbre les transformations, on filme les témoignages, on photographie les retrouvailles.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> 13 décembre 2026</span>
+              <span><strong>Horaire</strong> 18h30 — 22h30</span>
+              <span><strong>Lieu</strong> À confirmer</span>
+              <span><strong>Accès</strong> Sur invitation</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">Réservé<small>Cohorte d'automne</small></span>
+              <a href="contact.html" class="arrow-link">Plus d'infos →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80" alt="Lumière naturelle" />
+            <span class="card-badge is-gold">Conférence · Ouvert au public</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">Genève</p>
+            <h3 class="card-title">Sortir de la dépendance affective</h3>
+            <p class="card-desc">Une soirée pour celles qui sentent qu'elles tournent en rond. Comprendre, reconnaître les signes, et poser les premières fondations d'un changement réel.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> 24 janvier 2027</span>
+              <span><strong>Horaire</strong> 19h — 21h30</span>
+              <span><strong>Lieu</strong> Centre des congrès</span>
+              <span><strong>Places</strong> 120 max</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">35 €<small>Inscription requise</small></span>
+              <a href="contact.html" class="arrow-link">Réserver →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1200&q=80" alt="Ambiance soirée" />
+            <span class="card-badge">Live · Gratuit</span>
+          </div>
+          <div class="card-body">
+            <p class="card-place">En ligne</p>
+            <h3 class="card-title">Lancement de la cohorte d'hiver</h3>
+            <p class="card-desc">Présentation complète du programme, échange avec les coachs, témoignages de l'ancienne cohorte. Le bon endroit si vous hésitez à sauter le pas.</p>
+            <div class="card-meta">
+              <span><strong>Date</strong> 8 janvier 2027</span>
+              <span><strong>Horaire</strong> 20h heure Paris</span>
+              <span><strong>Lieu</strong> Zoom</span>
+              <span><strong>Accès</strong> Inscription libre</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">Gratuit<small>Inscription requise</small></span>
+              <a href="contact.html" class="arrow-link">S'inscrire →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad-sm" style="background: var(--bg-cream-deep); text-align: center;">
+    <div class="container-narrow">
+      <p class="eyebrow reveal">Ne ratez rien</p>
+      <h2 class="reveal" style="margin-top: 20px;">Soyez la première<br/><em style="font-style: italic; color: var(--gold);">informée.</em></h2>
+      <p class="reveal" style="margin-top: 24px; max-width: 480px; margin-left: auto; margin-right: auto; color: var(--text-muted); font-size: 16px;">
+        Recevez les dates des prochaines soirées, conférences et lives. Une newsletter par mois, pas plus.
+      </p>
+      <form class="reveal" style="margin-top: 36px; display: flex; gap: 12px; max-width: 460px; margin-left: auto; margin-right: auto; flex-wrap: wrap;">
+        <input type="email" placeholder="Votre email" style="flex: 1; min-width: 220px; background: var(--white); border: 1px solid var(--sage-light); padding: 16px 22px; border-radius: 999px; font-family: 'Jost'; font-size: 15px;" />
+        <button class="btn btn-primary" type="submit">S'abonner</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-top">
+        <div>
+          <p class="footer-display">La Bonne<br/><em>Méthode.</em></p>
+          <p style="color: rgba(240, 235, 224, 0.6); font-size: 14.5px; line-height: 1.6; max-width: 320px;">Un accompagnement profond pour revenir à soi. Cohortes, retraites, événements.</p>
+        </div>
+        <div><h4>Explorer</h4><ul><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="retraite.html">Retraite</a></li><li><a href="evenements.html">Événements</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="contact.html">Nous écrire</a></li><li><a href="contact.html">Réserver un appel</a></li></ul></div>
+        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 La Bonne Méthode</span><span>Mentions légales · CGV · Politique de confidentialité</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

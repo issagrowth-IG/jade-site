@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jade — Coach, Facilitatrice, Auteure</title>
+  <meta name="description" content="Jade. Quatre chemins pour apprendre à se choisir, à tenir, à vivre des relations qui font du bien : événements, retraite, La Bonne Méthode, accompagnement." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;450;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+</head>
+<body>
+
+  <!-- ============== NAV ============== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-mark">Jade</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link" href="retraite.html">Retraite</a></li>
+        <li><a class="nav-link" href="la-bonne-methode.html">La Bonne Méthode</a></li>
+        <li><a class="nav-link" href="accompagnement.html">Accompagnement</a></li>
+        <li><a class="nav-cta" href="contact.html" data-magnetic>Réserver un appel</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=2400&q=80" alt="Lumière dorée à travers les feuilles" />
+    </div>
+    <div class="container-wide">
+      <div class="hero-content">
+        <p class="eyebrow reveal">Coach · Facilitatrice · Auteure</p>
+        <h1 class="split-target">
+          Revenir à soi.<br/><em>Vraiment.</em>
+        </h1>
+        <p class="hero-desc reveal">
+          Quatre chemins pour apprendre à se choisir, à tenir dans la durée, et à vivre
+          des relations qui font vraiment du bien.
+        </p>
+        <div class="hero-cta-row reveal">
+          <a href="#chemins" class="btn btn-primary" data-magnetic>Découvrir les chemins</a>
+          <a href="contact.html" class="btn btn-ghost" data-magnetic>Réserver un appel</a>
+        </div>
+        <p class="here-fine reveal" style="font-size: 13px; color: var(--text-mute); max-width: 380px; line-height: 1.5;">Une approche. Quatre formats. Pour celles qui veulent que ça change pour de vrai.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============== INTRO STATEMENT ============== -->
+  <section class="section-pad-sm">
+    <div class="container-narrow">
+      <p class="eyebrow eyebrow-mute reveal" style="margin-bottom: 28px;">L'approche</p>
+      <p class="statement reveal split-target">
+        Comprendre ce qui se joue ne suffit pas. <em>Le pratiquer change tout.</em>
+      </p>
+
+      <div class="editorial-quote reveal" style="margin-top: 56px; max-width: 720px;">
+        <div class="bar"></div>
+        <div class="body">
+          <p>Vous avez lu les livres, vu les psys, écouté les podcasts. Vous savez. Et pourtant, les mêmes situations reviennent.</p>
+          <p>Le travail intérieur ne change rien tant qu'il reste dans la tête.</p>
+          <p><strong>Jade propose un cadre vivant :</strong> événements pour rencontrer la communauté, retraites pour se déposer, accompagnement pour pratiquer, méthode pour s'installer durablement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ============== 3 PILIERS (philosophie Jade) ============== -->
+  <section class="section-pad">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; margin-bottom: 80px;">
+        <div class="reveal">
+          <p class="eyebrow">La philosophie</p>
+          <h2 style="margin-top: 22px;">Trois principes<br/>qui tiennent <em style="font-style: italic; color: var(--forest);">debout.</em></h2>
+        </div>
+        <p class="reveal" style="font-size: 17px; line-height: 1.55; color: var(--text-soft); align-self: end; max-width: 560px;">
+          Pas une école, pas une école de pensée. Une approche concrète, vivante, qui prend le réel comme matière première.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar reveal">
+          <span class="pillar-num">i.</span>
+          <h3>Le vécu plutôt que la théorie</h3>
+          <p>On ne change pas en lisant, on change en pratiquant. Toutes les propositions sont expérientielles, jamais purement intellectuelles.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-num">ii.</span>
+          <h3>La communauté plutôt que la solitude</h3>
+          <p>Le travail intérieur tient quand il est partagé. Cohortes, soirées, retraites — chaque format est conçu pour faire chemin ensemble.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-num">iii.</span>
+          <h3>La durée plutôt que l'éclair</h3>
+          <p>Pas de transformation magique en un week-end. Un cadre tenable sur le long terme, où l'intensité laisse la place à l'ancrage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== IMAGE BAND ============== -->
+  <div class="image-band-wrap reveal-fade" data-img-reveal>
+    <div class="image-band">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=80" alt="Lever de soleil sur la mer" />
+    </div>
+  </div>
+
+  <!-- ============== 4 CHEMINS ============== -->
+  <section class="section-pad" id="chemins">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 60px;">
+        <div class="reveal">
+          <p class="eyebrow">Quatre chemins</p>
+          <h2 style="margin-top: 22px;">Par où voulez-vous<br/><em style="font-style: italic; color: var(--forest);">entrer ?</em></h2>
+        </div>
+        <p class="reveal" style="font-size: 17px; line-height: 1.55; color: var(--text-soft); align-self: end; max-width: 480px;">
+          Quatre formats pensés pour s'articuler — ou se vivre indépendamment. Chacun a sa porte, son intensité, son rythme.
+        </p>
+      </div>
+
+      <div class="menu-section" style="grid-template-columns: repeat(4, 1fr); gap: 14px;">
+        <a href="evenements.html" class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80" alt="Lumière à travers les feuilles" />
+          <div class="menu-card-inner">
+            <div class="menu-card-eyebrow">Soirées · Conférences · Lives</div>
+            <h3>Événements</h3>
+            <p>Les rendez-vous publics et privés. Soirées de clôture, conférences, lives mensuels.</p>
+            <span class="arrow-link">Voir les dates →</span>
+          </div>
+        </a>
+
+        <a href="retraite.html" class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1600&q=80" alt="Désert et lumière" />
+          <div class="menu-card-inner">
+            <div class="menu-card-eyebrow">Immersion totale</div>
+            <h3>Retraite</h3>
+            <p>Quelques jours hors du temps, dans un cadre choisi pour sa beauté.</p>
+            <span class="arrow-link">Voir les dates →</span>
+          </div>
+        </a>
+
+        <a href="la-bonne-methode.html" class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=1600&q=80" alt="Lumière douce sur des plantes" />
+          <div class="menu-card-inner">
+            <div class="menu-card-eyebrow">Le programme phare</div>
+            <h3>La Bonne Méthode</h3>
+            <p>Douze semaines en cohorte fermée. Cadre cadré, coach dédiée, soirée de clôture.</p>
+            <span class="arrow-link">Découvrir →</span>
+          </div>
+        </a>
+
+        <a href="accompagnement.html" class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1600&q=80" alt="Verdure et lumière" />
+          <div class="menu-card-inner">
+            <div class="menu-card-eyebrow">Sur-mesure</div>
+            <h3>Accompagnement</h3>
+            <p>Suivi individuel avec une coach certifiée Jade. À votre rythme, en privé.</p>
+            <span class="arrow-link">En savoir plus →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== "QUI EST JADE" ============== -->
+  <section class="section-pad" style="background: var(--bg-deep);">
+    <div class="container-wide">
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 90px; align-items: center;">
+        <div class="reveal" style="aspect-ratio: 4/5; border-radius: var(--r-lg); overflow: hidden; position: relative; background: #2a1e16;" data-img-reveal>
+          <img src="assets/images/jade-portrait.jpg" alt="Jade dans son studio podcast" style="width: 100%; height: 100%; object-fit: cover;" />
+          <div style="position: absolute; bottom: 24px; left: 24px; padding: 9px 16px; background: rgba(251, 248, 240, 0.94); backdrop-filter: blur(12px); border-radius: var(--r-pill); font-family: 'Inter', sans-serif; font-size: 12.5px; color: var(--text); display: inline-flex; align-items: center; gap: 8px;">
+            <span style="width: 7px; height: 7px; border-radius: 50%; background: var(--forest); display: inline-block;"></span>
+            <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 14px;">Jade</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow reveal">Qui je suis</p>
+          <h2 class="reveal" style="margin-top: 22px;">Une présence,<br/>un <em style="font-style: italic; color: var(--forest);">cadre,</em><br/>une exigence.</h2>
+          <p class="reveal" style="margin-top: 32px; font-size: 17px; line-height: 1.65; color: var(--text-soft); max-width: 560px;">
+            Coach et facilitatrice depuis plusieurs années, j'accompagne des femmes qui ont compris ce qui se rejoue dans leur vie — et qui veulent maintenant que ça bouge pour de vrai.
+          </p>
+          <p class="reveal" style="margin-top: 18px; font-size: 17px; line-height: 1.65; color: var(--text-soft); max-width: 560px;">
+            Mon approche ? Un cadre simple, structuré, sans culture du sacrifice. La théorie laisse place à la pratique. Le solo laisse place à la sororité.
+          </p>
+          <a href="contact.html" class="arrow-link reveal" style="margin-top: 36px;" data-magnetic>Travailler avec moi →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MARQUEE ============== -->
+  <section style="padding: clamp(60px, 8vw, 110px) 0; overflow: hidden;">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Revenir à soi</span><span class="dot">·</span>
+        <span>Tenir dans la durée</span><span class="dot">·</span>
+        <span>Sortir des schémas</span><span class="dot">·</span>
+        <span>Une présence, un cadre</span><span class="dot">·</span>
+        <span>Revenir à soi</span><span class="dot">·</span>
+        <span>Tenir dans la durée</span><span class="dot">·</span>
+        <span>Sortir des schémas</span><span class="dot">·</span>
+        <span>Une présence, un cadre</span><span class="dot">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA FINAL ============== -->
+  <section class="section-pad" style="background: var(--forest-deep); color: #F0EBE0; border-radius: var(--r-lg) var(--r-lg) 0 0; margin-top: 40px;">
+    <div class="container-narrow" style="text-align: center;">
+      <p class="eyebrow reveal" style="color: rgba(240,235,224,0.7);">Le premier pas</p>
+      <h2 class="reveal split-target" style="color: #F0EBE0; margin-top: 28px;">
+        On en parle ?<br/><em style="font-style: italic; color: var(--gold);">Vingt minutes suffisent.</em>
+      </h2>
+      <p class="reveal" style="margin-top: 28px; max-width: 540px; margin-left: auto; margin-right: auto; color: rgba(240,235,224,0.78); font-size: 17px; line-height: 1.55;">
+        Un échange sans pression pour comprendre où vous en êtes, et voir ensemble quel chemin a du sens pour vous.
+      </p>
+      <div class="reveal" style="margin-top: 44px;">
+        <a href="contact.html" class="btn" data-magnetic style="background: var(--gold); color: var(--forest-deep);">Réserver un appel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-top">
+        <div>
+          <p class="footer-display"><em>Jade.</em></p>
+          <p style="color: rgba(240, 235, 224, 0.6); font-size: 14.5px; line-height: 1.6; max-width: 360px;">
+            Coach et facilitatrice. Quatre chemins pour revenir à soi : événements, retraite, La Bonne Méthode, accompagnement.
+          </p>
+        </div>
+        <div>
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="retraite.html">Retraite</a></li>
+            <li><a href="la-bonne-methode.html">La Bonne Méthode</a></li>
+            <li><a href="accompagnement.html">Accompagnement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Nous écrire</a></li>
+            <li><a href="contact.html">Réserver un appel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 La Bonne Méthode</span>
+        <span>Mentions légales · CGV · Politique de confidentialité</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

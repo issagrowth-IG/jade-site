@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — La Bonne Méthode</title>
+  <meta name="description" content="Écrire à l'équipe La Bonne Méthode ou réserver un échange." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;450;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-mark">Jade</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link" href="retraite.html">Retraite</a></li>
+        <li><a class="nav-link" href="la-bonne-methode.html">La Bonne Méthode</a></li>
+        <li><a class="nav-link" href="accompagnement.html">Accompagnement</a></li>
+        <li><a class="nav-cta is-active" href="contact.html" data-magnetic>Réserver un appel</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span class="sep">›</span>
+    <span class="current">Contact</span>
+  </nav>
+
+  <!-- HERO + FORM -->
+  <section style="padding: 60px 0 120px;">
+    <div class="container-wide" style="max-width: 1100px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+
+        <div>
+          <p class="eyebrow reveal">On vous écoute</p>
+          <h1 class="reveal" style="margin-top: 24px;">
+            Parlons-nous.<br/><em style="font-style: italic; color: var(--gold);">Vraiment.</em>
+          </h1>
+          <p class="reveal" style="margin-top: 28px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+            Une question, un projet, un doute, une demande de presse. Toutes les voies sont ouvertes — choisissez celle qui vous va.
+          </p>
+
+          <div class="reveal" style="margin-top: 48px; display: flex; flex-direction: column; gap: 28px;">
+            <div style="padding: 28px; background: var(--bg-cream-light); border-left: 2px solid var(--gold);">
+              <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--forest); margin: 0 0 8px;">Par email</p>
+              <a href="mailto:bonjour@labonnemethode.fr" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--forest-deep); text-decoration: none;">bonjour@labonnemethode.fr</a>
+              <p style="margin: 8px 0 0; color: var(--text-muted); font-size: 14.5px;">Réponse sous 48h ouvrées.</p>
+            </div>
+
+            <div style="padding: 28px; background: var(--bg-cream-light); border-left: 2px solid var(--gold);">
+              <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--forest); margin: 0 0 8px;">Échange découverte</p>
+              <a href="#" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--forest-deep); text-decoration: none;">Réserver 20 minutes au téléphone</a>
+              <p style="margin: 8px 0 0; color: var(--text-muted); font-size: 14.5px;">Pour évaluer si l'accompagnement ou une cohorte vous convient.</p>
+            </div>
+
+            <div style="padding: 28px; background: var(--bg-cream-light); border-left: 2px solid var(--gold);">
+              <p style="font-family: 'Jost'; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--forest); margin: 0 0 8px;">Presse &amp; partenariats</p>
+              <a href="mailto:presse@labonnemethode.fr" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--forest-deep); text-decoration: none;">presse@labonnemethode.fr</a>
+              <p style="margin: 8px 0 0; color: var(--text-muted); font-size: 14.5px;">Médias, conférences, collaborations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="background: var(--white); padding: 56px; border: 1px solid var(--sage-light);">
+          <p class="eyebrow">Le formulaire</p>
+          <h3 style="margin-top: 16px; margin-bottom: 32px;">Écrivez-nous</h3>
+
+          <form>
+            <div class="field">
+              <label for="nom">Prénom &amp; nom</label>
+              <input type="text" id="nom" name="nom" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="field">
+              <label for="objet">L'objet</label>
+              <select id="objet" name="objet">
+                <option>Je découvre, je veux en savoir plus</option>
+                <option>Je veux candidater à une cohorte</option>
+                <option>Je veux un accompagnement individuel</option>
+                <option>Je m'intéresse à une retraite</option>
+                <option>Presse / partenariat</option>
+                <option>Autre</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" placeholder="Dites-nous ce qui vous amène ici." required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="width: 100%; justify-content: center; margin-top: 12px;">Envoyer mon message</button>
+
+            <p style="margin-top: 18px; font-size: 12.5px; color: var(--sage); text-align: center;">Vos informations restent confidentielles. Aucune newsletter sans votre accord.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ MINI -->
+  <section class="section-pad" style="background: var(--bg-cream-deep);">
+    <div class="container-narrow">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 60px;">
+        <p class="eyebrow reveal">Questions fréquentes</p>
+        <h2 class="reveal" style="margin-top: 20px;">Avant de nous écrire,<br/><em style="font-style: italic; color: var(--gold);">peut-être ?</em></h2>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <details class="reveal" style="padding: 28px 0; border-bottom: 1px solid var(--sage-light);">
+          <summary style="cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--forest-deep); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>Combien de temps avant une réponse ?</span>
+            <span style="font-family: 'Jost'; color: var(--gold); font-size: 1.4rem;">+</span>
+          </summary>
+          <p style="margin-top: 16px; color: var(--text-muted); font-size: 16px; line-height: 1.7;">Nous répondons à tous les emails sous 48 heures ouvrées. Les demandes d'échange découverte sont calées sous 5 jours.</p>
+        </details>
+
+        <details class="reveal" style="padding: 28px 0; border-bottom: 1px solid var(--sage-light);">
+          <summary style="cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--forest-deep); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>Je ne sais pas par où commencer.</span>
+            <span style="font-family: 'Jost'; color: var(--gold); font-size: 1.4rem;">+</span>
+          </summary>
+          <p style="margin-top: 16px; color: var(--text-muted); font-size: 16px; line-height: 1.7;">Le mieux dans ce cas, c'est de réserver un échange découverte. Vingt minutes pour qu'on comprenne où vous en êtes et qu'on vous oriente vers le bon format.</p>
+        </details>
+
+        <details class="reveal" style="padding: 28px 0; border-bottom: 1px solid var(--sage-light);">
+          <summary style="cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--forest-deep); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>Peut-on payer en plusieurs fois ?</span>
+            <span style="font-family: 'Jost'; color: var(--gold); font-size: 1.4rem;">+</span>
+          </summary>
+          <p style="margin-top: 16px; color: var(--text-muted); font-size: 16px; line-height: 1.7;">Oui. Toutes les offres (cohorte, retraite, accompagnement individuel) sont accessibles en 3 ou 6 mensualités selon le format. Les détails sont précisés à l'inscription.</p>
+        </details>
+
+        <details class="reveal" style="padding: 28px 0;">
+          <summary style="cursor: pointer; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--forest-deep); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            <span>Est-ce que c'est de la thérapie ?</span>
+            <span style="font-family: 'Jost'; color: var(--gold); font-size: 1.4rem;">+</span>
+          </summary>
+          <p style="margin-top: 16px; color: var(--text-muted); font-size: 16px; line-height: 1.7;">Non. C'est un accompagnement, pas une psychothérapie. Si vous traversez une situation de crise psychologique, nous vous orientons vers les professionnels adaptés. Nous travaillons souvent en complément d'un suivi thérapeutique existant.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-top">
+        <div>
+          <p class="footer-display">La Bonne<br/><em>Méthode.</em></p>
+          <p style="color: rgba(240, 235, 224, 0.6); font-size: 14.5px; line-height: 1.6; max-width: 320px;">Un accompagnement profond pour revenir à soi. Cohortes, retraites, événements.</p>
+        </div>
+        <div><h4>Explorer</h4><ul><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="retraite.html">Retraite</a></li><li><a href="evenements.html">Événements</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="contact.html">Nous écrire</a></li><li><a href="contact.html">Réserver un appel</a></li></ul></div>
+        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 La Bonne Méthode</span><span>Mentions légales · CGV · Politique de confidentialité</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

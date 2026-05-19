@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retraite — La Bonne Méthode</title>
+  <meta name="description" content="Les retraites La Bonne Méthode : dates, lieux, programme et inscriptions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;450;500;600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand-mark">Jade</a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link is-active" href="retraite.html">Retraite</a></li>
+        <li><a class="nav-link" href="la-bonne-methode.html">La Bonne Méthode</a></li>
+        <li><a class="nav-link" href="accompagnement.html">Accompagnement</a></li>
+        <li><a class="nav-cta" href="contact.html" data-magnetic>Réserver un appel</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Accueil</a>
+    <span class="sep">›</span>
+    <span class="current">Retraite</span>
+  </nav>
+
+  <!-- HERO -->
+  <section style="padding: 60px 0 80px;">
+    <div class="container-wide" style="max-width: 1200px;">
+      <p class="eyebrow reveal">Immersion</p>
+      <h1 class="reveal" style="margin-top: 24px; max-width: 880px;">
+        Quelques jours<br/><em style="font-style: italic; color: var(--gold);">hors du temps.</em>
+      </h1>
+      <p class="reveal" style="margin-top: 32px; max-width: 620px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+        Une retraite La Bonne Méthode, c'est une pause radicale dans le quotidien. Un lieu choisi pour sa beauté, un cadre cadré pour le travail intérieur, et une douzaine de femmes qui traversent le même chemin que vous.
+      </p>
+    </div>
+  </section>
+
+  <!-- BIG IMAGE BAND -->
+  <div class="image-band reveal">
+    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=2400&q=80" alt="Plage et lumière dorée" />
+  </div>
+
+  <!-- RETREAT CARDS -->
+  <section class="section-pad">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 80px;">
+        <p class="eyebrow reveal">Prochaines dates</p>
+        <h2 class="reveal" style="margin-top: 20px;">Choisissez votre<br/><em style="font-style: italic; color: var(--gold);">destination intérieure.</em></h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 40px;">
+
+        <article class="card reveal">
+          <div class="card-media" style="aspect-ratio: 5/4;">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80" alt="Bali, riziere" />
+            <span class="card-badge is-gold">Nouvelle date</span>
+          </div>
+          <div class="card-body" style="padding: 40px;">
+            <p class="card-place">Bali · Indonésie</p>
+            <h3 class="card-title">Retour à soi à Ubud</h3>
+            <p class="card-desc">Sept jours au coeur des rizières d'Ubud. Pratiques matinales, ateliers d'écriture, soin partagé, repas vivants. Une retraite pensée pour celles qui veulent vraiment se déposer.</p>
+            <div class="card-meta">
+              <span><strong>Dates</strong> 15 — 22 septembre 2026</span>
+              <span><strong>Durée</strong> 7j / 6 nuits</span>
+              <span><strong>Places</strong> 12 max</span>
+              <span><strong>Inclus</strong> Logement, repas, ateliers</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">2 380 €<small>Acompte 30 % à l'inscription</small></span>
+              <a href="contact.html" class="arrow-link">Réserver →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media" style="aspect-ratio: 5/4;">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80" alt="Provence, lavande" />
+            <span class="card-badge is-deep">Complet</span>
+          </div>
+          <div class="card-body" style="padding: 40px;">
+            <p class="card-place">Provence · France</p>
+            <h3 class="card-title">Cocon de printemps</h3>
+            <p class="card-desc">Cinq jours dans un mas du Luberon. Cadre paisible, repas locaux, ateliers structurés. La retraite parfaite pour les fins de cohorte qui veulent prolonger l'expérience.</p>
+            <div class="card-meta">
+              <span><strong>Dates</strong> 4 — 8 mai 2026</span>
+              <span><strong>Durée</strong> 5j / 4 nuits</span>
+              <span><strong>Places</strong> 12 max — complet</span>
+              <span><strong>Inclus</strong> Logement, repas, ateliers</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">1 580 €<small>Liste d'attente disponible</small></span>
+              <a href="contact.html" class="arrow-link">Liste d'attente →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media" style="aspect-ratio: 5/4;">
+            <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1200&q=80" alt="Maroc, désert" />
+            <span class="card-badge">Annoncée</span>
+          </div>
+          <div class="card-body" style="padding: 40px;">
+            <p class="card-place">Maroc · Désert d'Agafay</p>
+            <h3 class="card-title">Le silence du désert</h3>
+            <p class="card-desc">Quatre jours au bord du désert, à 45 minutes de Marrakech. Cadre minéral, nuits sous tente berbère, méditations à l'aube. Pour celles qui ont besoin d'épure absolue.</p>
+            <div class="card-meta">
+              <span><strong>Dates</strong> 18 — 21 février 2027</span>
+              <span><strong>Durée</strong> 4j / 3 nuits</span>
+              <span><strong>Places</strong> 10 max</span>
+              <span><strong>Inclus</strong> Logement, repas, ateliers</span>
+            </div>
+            <div class="card-actions">
+              <span class="card-price">1 290 €<small>Ouverture inscriptions juillet</small></span>
+              <a href="contact.html" class="arrow-link">Être prévenue →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMME 4 PILIERS -->
+  <section class="section-pad" style="background: var(--bg-cream-light);">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto 80px;">
+        <p class="eyebrow reveal">Le programme</p>
+        <h2 class="reveal" style="margin-top: 20px;">Chaque journée<br/><em style="font-style: italic; color: var(--gold);">vous nourrit en profondeur.</em></h2>
+      </div>
+
+      <div class="pillars" style="margin-top: 0;">
+        <div class="pillar reveal">
+          <div class="pillar-mark">M</div>
+          <h3>Rituels du matin</h3>
+          <p>Lever doux, pratique de respiration, mouvement conscient. La journée commence par 90 minutes de retour au corps.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-mark">A</div>
+          <h3>Ateliers de transformation</h3>
+          <p>Le coeur du programme. Ateliers structurés en petits groupes, avec une coach présente à chaque session.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-mark">P</div>
+          <h3>Repas nourrissants</h3>
+          <p>Cuisine vivante, locale, pensée comme un soin. On mange ensemble, on partage. Sans culture du sacrifice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE + QUOTE -->
+  <section class="section-pad">
+    <div class="container-wide" style="max-width: 1200px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div class="reveal" style="aspect-ratio: 4/5; overflow: hidden;">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=80" alt="Méditation au lever du soleil" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">L'esprit des retraites</p>
+          <h2 style="margin-top: 24px;">On ne revient<br/>jamais tout à fait<br/><em style="font-style: italic; color: var(--gold);">la même.</em></h2>
+          <p style="margin-top: 24px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+            Une retraite n'est pas une parenthèse. C'est une accélération. Le décor change, les habitudes tombent, et ce qui se cache d'habitude derrière le bruit du quotidien remonte enfin à la surface.
+          </p>
+          <p style="margin-top: 18px; color: var(--text-muted); font-size: 17px; line-height: 1.7;">
+            Vous y arrivez fatiguée, vous en repartez alignée. Avec des outils, une communauté et une direction claire.
+          </p>
+          <a href="contact.html" class="arrow-link" style="margin-top: 32px;">Réserver un échange →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad" style="background: var(--forest-deep); color: var(--bg-cream); text-align: center;">
+    <div class="container-narrow">
+      <p class="eyebrow reveal" style="color: var(--gold-soft);">Avant de réserver</p>
+      <h2 class="reveal" style="color: var(--bg-cream); margin-top: 20px;">Un échange<br/><em style="font-style: italic; color: var(--gold);">pour voir si c'est juste.</em></h2>
+      <p class="reveal" style="margin-top: 28px; max-width: 540px; margin-left: auto; margin-right: auto; color: rgba(245, 240, 232, 0.82); font-size: 17px; line-height: 1.7;">
+        Les retraites sont à taille humaine, on tient à ce que chaque participante soit là pour les bonnes raisons. 20 minutes au téléphone pour faire le point ensemble.
+      </p>
+      <div class="reveal" style="margin-top: 44px;">
+        <a href="contact.html" class="btn" style="background: var(--gold); color: var(--forest-deep);">Demander un échange</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-wide">
+      <div class="footer-top">
+        <div>
+          <p class="footer-display">La Bonne<br/><em>Méthode.</em></p>
+          <p style="color: rgba(240, 235, 224, 0.6); font-size: 14.5px; line-height: 1.6; max-width: 320px;">Un accompagnement profond pour revenir à soi. Cohortes, retraites, événements.</p>
+        </div>
+        <div><h4>Explorer</h4><ul><li><a href="accompagnement.html">Accompagnement</a></li><li><a href="retraite.html">Retraite</a></li><li><a href="evenements.html">Événements</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="contact.html">Nous écrire</a></li><li><a href="contact.html">Réserver un appel</a></li></ul></div>
+        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 La Bonne Méthode</span><span>Mentions légales · CGV · Politique de confidentialité</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
