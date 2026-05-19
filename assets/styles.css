@@ -4,29 +4,30 @@
    ============================================ */
 
 :root {
-  /* Canvas — bright premium off-whites */
-  --bg: #FBF8F0;
+  /* Canvas — luxury off-whites with depth */
+  --bg: #F4F0E6;
   --bg-card: #FFFFFF;
-  --bg-deep: #F1ECDC;
-  --bg-tinted: #EFE9D4;
-  --line: rgba(10, 24, 18, 0.07);
-  --line-strong: rgba(10, 24, 18, 0.18);
+  --bg-deep: #E9E3D2;
+  --bg-tinted: #E0D7C0;
+  --bg-noir: #0B0E0C;
+  --line: rgba(11, 14, 12, 0.08);
+  --line-strong: rgba(11, 14, 12, 0.20);
 
-  /* Text — deeper for stronger contrast */
-  --text: #0A1812;
-  --text-soft: #3A4540;
-  --text-mute: #7B847E;
+  /* Text — deeper for premium contrast */
+  --text: #0B0E0C;
+  --text-soft: #353B36;
+  --text-mute: #7A7F79;
 
-  /* Brand — refined */
-  --forest: #0E3829;
-  --forest-deep: #06231A;
-  --forest-darker: #02110A;
-  --moss: #3D5C4E;
-  --gold: #B8924A;
-  --gold-deep: #8C6A2D;
-  --gold-soft-tone: #DABE85;
-  --terracotta: #B98164;
-  --ivory: #EDE2C7;
+  /* Brand — Hermès-tier neutrals */
+  --forest: #0E3024;
+  --forest-deep: #061A11;
+  --forest-darker: #02100A;
+  --moss: #354F44;
+  --gold: #A6824A;
+  --gold-deep: #846433;
+  --gold-soft-tone: #C9AC76;
+  --terracotta: #A86B4F;
+  --ivory: #E8DCBF;
 
   /* Radii */
   --r-pill: 999px;
@@ -706,3 +707,141 @@ html.lenis { height: auto; }
   opacity: 0.6;
 }
 .portrait-placeholder svg { position: relative; width: 50%; max-width: 220px; opacity: 0.85; }
+
+/* ============================================
+   RESPONSIVE — Mobile-first overrides
+   ============================================ */
+
+/* Tablet & below */
+@media (max-width: 1024px) {
+  .container-narrow, .container-wide, .navbar-inner { padding-left: 24px; padding-right: 24px; }
+  .breadcrumb { padding-left: 24px; padding-right: 24px; }
+  .nav-link { font-size: 13.5px; padding: 8px 14px; }
+  .nav-cta { padding: 11px 20px; font-size: 13.5px; }
+  .hero { min-height: 88vh; padding: 120px 0 80px; }
+  .menu-card-inner { padding: 30px; }
+  .footer-top { gap: 36px; }
+  body { font-size: 16.5px; }
+}
+
+/* Tablet portrait */
+@media (max-width: 900px) {
+  /* Inline grid overrides */
+  section [style*="grid-template-columns: 1fr 1.4fr"],
+  section [style*="grid-template-columns: 1fr 1fr"],
+  section [style*="grid-template-columns: 0.9fr 1.1fr"],
+  section [style*="grid-template-columns: 1.05fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Force menu sections to 1-col on mobile-like screens */
+  .menu-section[style*="repeat(3, 1fr)"],
+  .menu-section[style*="repeat(4, 1fr)"] {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Planning rows */
+  .section-pad [style*="grid-template-columns: 80px 1fr 220px"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    text-align: left;
+  }
+  .section-pad [style*="grid-template-columns: 80px 1fr 220px"] > span:last-child {
+    text-align: left !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  body { font-size: 16px; }
+  .container-narrow, .container-wide, .navbar-inner { padding-left: 20px; padding-right: 20px; }
+  .breadcrumb { padding-left: 20px; padding-right: 20px; padding-top: 100px; font-size: 12.5px; gap: 8px; }
+
+  /* Nav */
+  .navbar { height: 70px; }
+  .navbar.is-scrolled { height: 64px; }
+  .brand-mark { font-size: 24px; gap: 9px; }
+  .brand-mark::before { width: 7px; height: 7px; }
+  .nav-cta { padding: 10px 18px; font-size: 13px; margin-left: 0; }
+
+  /* Typography */
+  h1 { font-size: clamp(2.3rem, 11vw, 3.8rem); }
+  h2 { font-size: clamp(1.85rem, 8vw, 2.8rem); }
+  h3 { font-size: clamp(1.35rem, 5vw, 1.75rem); }
+  .statement { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .footer-display { font-size: clamp(2.4rem, 11vw, 3.5rem); }
+
+  /* Hero */
+  .hero { min-height: 86vh; padding: 110px 0 70px; }
+  .hero-content > * + * { margin-top: 20px; }
+  .hero-desc { font-size: 16px; }
+  .hero-cta-row { gap: 10px; margin-top: 28px; flex-direction: column; align-items: stretch; }
+  .hero-cta-row .btn { justify-content: center; }
+
+  /* Buttons / pills */
+  .btn { padding: 14px 22px; font-size: 13.5px; width: 100%; justify-content: center; }
+  .tag-pill { font-size: 12.5px; padding: 7px 13px; }
+
+  /* Sections */
+  .section-pad { padding: 64px 0; }
+  .section-pad-sm { padding: 48px 0; }
+
+  /* Pillars */
+  .pillars { gap: 28px; margin-top: 40px; }
+  .pillar { padding-top: 24px; }
+
+  /* Cards */
+  .card-body { padding: 24px; gap: 10px; }
+  .card-meta { grid-template-columns: 1fr 1fr; gap: 10px 16px; font-size: 12.5px; }
+  .card-actions { flex-direction: column; gap: 16px; align-items: flex-start; }
+  .card-price { font-size: 1.35rem; }
+
+  /* Menu cards (home) */
+  .menu-card { aspect-ratio: 4/3; }
+  .menu-card-inner { padding: 24px; }
+  .menu-card h3 { font-size: 1.6rem; }
+  .menu-card p { font-size: 14px; margin-bottom: 16px; }
+
+  /* Image band */
+  .image-band { aspect-ratio: 16/10; border-radius: 14px; }
+  .image-band-wrap { padding: 0 20px; }
+
+  /* Footer */
+  .footer { padding: 60px 0 28px; border-radius: 18px 18px 0 0; }
+  .footer-top { grid-template-columns: 1fr !important; gap: 32px; padding-bottom: 36px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: left; align-items: flex-start; font-size: 12px; }
+
+  /* Marquee */
+  .marquee { font-size: clamp(2.4rem, 12vw, 4rem); }
+  .marquee-track { gap: 40px; }
+
+  /* Form */
+  .field { margin-bottom: 16px; }
+  .field input, .field textarea, .field select { font-size: 16px; padding: 12px 14px; }
+  /* Contact page form column reflow handled by inline grid override */
+
+  /* Pull quote */
+  .pull-quote { font-size: clamp(1.4rem, 6vw, 1.9rem) !important; }
+
+  /* Editorial quote */
+  .editorial-quote { grid-template-columns: 3px 1fr; gap: 18px; }
+  .editorial-quote .body p { font-size: 15.5px; }
+
+  /* CTA dark section */
+  section[style*="background: var(--forest-deep)"] { border-radius: 18px 18px 0 0 !important; }
+
+  /* Hide custom cursor on touch */
+  body { cursor: auto; }
+  .cursor-dot, .cursor-ring { display: none; }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  h1 { font-size: clamp(2rem, 11vw, 3rem); }
+  .hero { min-height: 80vh; padding: 100px 0 60px; }
+  .menu-card-inner { padding: 20px; }
+  .card-body { padding: 20px; }
+  .btn { padding: 13px 18px; font-size: 13px; }
+}
